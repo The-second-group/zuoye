@@ -1,0 +1,9 @@
+edit:test1.o test2.o
+	cc -o  test1.o test2.o
+test2.o:test2.c 
+	cc -c test2.c
+test1.o:test1.c student_info.h
+	cc -c test1.c
+clean:
+	rm test1.o test2.o
+ 
