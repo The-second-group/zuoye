@@ -1,0 +1,6 @@
+test4:test4.o 
+	gcc -o test4 test4.o
+test4.o:test4.c student_info.h
+	gcc -c test4.c -o test4.o
+clean :
+	rm test4.o
